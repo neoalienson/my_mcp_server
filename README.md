@@ -16,6 +16,25 @@ This is a personal implementation of a Model Context Protocol (MCP) server that 
 - Default stdio mode: `python my_mcp_server.py`
 - SSE mode (port 8000): `python my_mcp_server.py --sse`
 
+## Cline Integration
+To connect this MCP server to Cline using stdio:
+
+1. Add this configuration to your Cline MCP settings (cline_mcp_settings.json):
+```json
+{
+  "prompt-server": {
+    "disabled": false,
+    "timeout": 3,
+    "type": "stdio",
+    "command": "python",
+    "args": [
+      "c:/Projects/my-mcp-server/my_mcp_server.py"
+    ]
+  }
+}
+```
+
+
 ## Testing
 Tests are available in `test_tools.py`. Run with:
 ```bash

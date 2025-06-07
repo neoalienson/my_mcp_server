@@ -1,5 +1,6 @@
 # Personal MCP Server
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/neoalienson/my_mcp_server)
 [![Python Tests](https://github.com/neoalienson/my_mcp_server/actions/workflows/python-tests.yml/badge.svg)](https://github.com/neoalienson/my_mcp_server/actions/workflows/python-tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![codecov](https://codecov.io/gh/neoalienson/my_mcp_server/branch/main/graph/badge.svg?token=YOUR_TOKEN_HERE)](https://codecov.io/gh/neoalienson/my_mcp_server)

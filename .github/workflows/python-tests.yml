@@ -25,11 +25,12 @@ jobs:
         python -m coverage xml
         python -m coverage report -m
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+    - name: Generate coverage badge
+      uses: schneegans/dynamic-badges-action@v1.7.0
       with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: true
+        auth: ${{ secrets.GITHUB_TOKEN }}
+        filename: coverage.json
+        label: Coverage
+        message: ${{ steps.coverage.outputs.coverage }}
+        color: green
+        namedLogo: github

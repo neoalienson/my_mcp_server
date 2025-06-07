@@ -24,7 +24,7 @@ jobs:
       run: |
         python -m coverage run -m unittest test_tools.py
         python -m coverage xml
-        COVERAGE=$(python -m coverage report -m | awk '/TOTAL/ {print $4}' | sed 's/%//')
+        COVERAGE=$(python -m coverage report -m | awk '/TOTAL/ {print $4}')
         echo "coverage=${COVERAGE}" >> $GITHUB_OUTPUT
         python -m coverage report -m
 

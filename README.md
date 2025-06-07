@@ -1,5 +1,7 @@
 # Personal MCP Server
 
+[![Python Tests](https://github.com/neoalienson/my-mcp-server/actions/workflows/python-tests.yml/badge.svg)](https://github.com/neoalienson/my-mcp-server/actions/workflows/python-tests.yml)
+
 This is a personal implementation of a Model Context Protocol (MCP) server that provides custom tools through a FastMCP interface.
 
 ## Features

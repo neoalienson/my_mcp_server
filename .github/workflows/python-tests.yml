@@ -28,7 +28,7 @@ jobs:
     - name: Generate coverage badge
       uses: schneegans/dynamic-badges-action@v1.7.0
       with:
-        auth: ${{ secrets.GITHUB_TOKEN }}
+        auth: ${{ secrets.GIST_SECRET }}
         gistID: 56e3f8008c451cced4331a37239e7bfc
         filename: coverage.json
         label: Coverage
